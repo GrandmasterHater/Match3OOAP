@@ -1,9 +1,10 @@
-﻿namespace Match3OOAP;
+﻿using System;
+using Match3OOAP.Infrastructure;
 
-class Program
-{
-    static void Main(string[] args)
+namespace Match3OOAP
+{ 
+    class Program
     {
-        Console.WriteLine("Hello, World!");
+        static void Main(string[] args) { }
     }
 }

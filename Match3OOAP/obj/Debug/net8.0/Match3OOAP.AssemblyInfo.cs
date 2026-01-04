@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Match3OOAP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4a45b0f179628b93e2fac0cfb3ce49c45643c3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Match3OOAP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Match3OOAP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
