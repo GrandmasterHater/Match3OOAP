@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{143B4AAF-C097-4C26-B6BF-25254357DB39}</ProjectGuid>
+        <OutputType>Exe</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>Match3OOAP</RootNamespace>
+        <AssemblyName>Match3OOAP</AssemblyName>
+        <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Data"/>
+        <Reference Include="System.Xml"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="GameLifeCycle\GameStateManagement\GameController.cs" />
+        <Compile Include="GameLifeCycle\GameStateManagement\GameState.cs" />
+        <Compile Include="GameLifeCycle\GameStateManagement\GameStateFactory\GameStateFactory.cs" />
+        <Compile Include="GameLifeCycle\GameStateManagement\GameStateFactory\IGameStateFactory.cs" />
+        <Compile Include="GameLifeCycle\GameStateManagement\GameStates\ClosedState.cs" />
+        <Compile Include="GameLifeCycle\GameStateManagement\GameStates\FinishedState.cs" />
+        <Compile Include="GameLifeCycle\GameStateManagement\GameStates\ReadyState.cs" />
+        <Compile Include="GameLifeCycle\GameStateManagement\GameStates\RunState.cs" />
+        <Compile Include="GameLifeCycle\GameRoot.cs" />
+        <Compile Include="GameLogic\BonusSystem\AutoApplicableBonus.cs" />
+        <Compile Include="GameLogic\BonusSystem\Bonus.cs" />
+        <Compile Include="GameLogic\BonusSystem\BonusContainer.cs" />
+        <Compile Include="GameLogic\BonusSystem\BonusId.cs" />
+        <Compile Include="GameLogic\BonusSystem\ManualApplicableBonus.cs" />
+        <Compile Include="GameLogic\GameGrid\Combination.cs" />
+        <Compile Include="GameLogic\GameGrid\Coordinate.cs" />
+        <Compile Include="GameLogic\GameGrid\Element.cs" />
+        <Compile Include="GameLogic\GameGrid\Grid.cs" />
+        <Compile Include="GameLogic\GameGrid\RandomElementsGenerator.cs" />
+        <Compile Include="GameLogic\GameMove\Move.cs" />
+        <Compile Include="GameLogic\GameMove\MoveHandleChain\MoveHandler.cs" />
+        <Compile Include="GameLogic\GameMove\MoveResult.cs" />
+        <Compile Include="GameLogic\Statistics\MoveHistory.cs" />
+        <Compile Include="GameLogic\Statistics\Score.cs" />
+        <Compile Include="Gui\EndGameScreen\FinishGamePresenter.cs" />
+        <Compile Include="Gui\EndGameScreen\FinishGameView.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\BonusPresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\GamePresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\GameScore.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\GridPresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\IMovePresentationStrategy.cs" />
+        <Compile Include="Gui\GameScreen\Views\BonusView.cs" />
+        <Compile Include="Gui\GameScreen\Views\GameStatisticView.cs" />
+        <Compile Include="Gui\GameScreen\Views\GameView.cs" />
+        <Compile Include="Gui\GameScreen\Views\GridView.cs" />
+        <Compile Include="Gui\GuiPresenter.cs" />
+        <Compile Include="Gui\IGuiPresenter.cs" />
+        <Compile Include="Gui\IGuiView.cs" />
+        <Compile Include="Gui\StartGameScreen\StartGamePresenter.cs" />
+        <Compile Include="Gui\StartGameScreen\StartGameView.cs" />
+        <Compile Include="InputHandle\AsyncInputListener.cs" />
+        <Compile Include="Program.cs"/>
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Descriptions\AnalysisClasses.md" />
+      <Content Include="Descriptions\BoundariesOfSystem.md" />
+      <Content Include="Descriptions\ClustersDescription.md" />
+      <Content Include="Descriptions\DesignClasses.md" />
+      <Content Include="Descriptions\ModulesDescription.md" />
+      <Content Include="Descriptions\RealisationClasses.md" />
+      <Content Include="Descriptions\RejectingBadClasses.md" />
+      <Content Include="Descriptions\SystemDescription.md" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="bin\Debug\" />
+      <Folder Include="GameLogic\GameMove\MoveHandleChain\BonusMoveHandlersChain\" />
+      <Folder Include="GameLogic\GameMove\MoveHandleChain\SwapMoveHandlersChain\" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>

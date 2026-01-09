@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Match3OOAP", "Match3OOAP.csproj", "{DF50B0FF-0A4B-4ADF-8C2F-E7163796D1EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Match3OOAP", "Match3OOAP\Match3OOAP.csproj", "{143B4AAF-C097-4C26-B6BF-25254357DB39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Match3OOAPTests", "Match3OOAPTests\Match3OOAPTests.csproj", "{94765A17-2C39-4410-882B-39DEF0010A39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DF50B0FF-0A4B-4ADF-8C2F-E7163796D1EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DF50B0FF-0A4B-4ADF-8C2F-E7163796D1EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF50B0FF-0A4B-4ADF-8C2F-E7163796D1EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF50B0FF-0A4B-4ADF-8C2F-E7163796D1EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143B4AAF-C097-4C26-B6BF-25254357DB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143B4AAF-C097-4C26-B6BF-25254357DB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143B4AAF-C097-4C26-B6BF-25254357DB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143B4AAF-C097-4C26-B6BF-25254357DB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94765A17-2C39-4410-882B-39DEF0010A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94765A17-2C39-4410-882B-39DEF0010A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94765A17-2C39-4410-882B-39DEF0010A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94765A17-2C39-4410-882B-39DEF0010A39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

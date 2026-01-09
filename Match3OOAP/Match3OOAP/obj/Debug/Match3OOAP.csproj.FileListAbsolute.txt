@@ -1,0 +1,6 @@
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\bin\Debug\Match3OOAP.exe
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\bin\Debug\Match3OOAP.pdb
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\Match3OOAP.csproj.AssemblyReference.cache
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\Match3OOAP.csproj.CoreCompileInputs.cache
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\Match3OOAP.exe
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\Match3OOAP.pdb
