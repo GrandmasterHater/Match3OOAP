@@ -1,6 +1,7 @@
 ﻿using System;
 using Match3OOAP.GameLifeCycle.GameStateManagement;
 using Match3OOAP.GameLifeCycle.GameStateManagement.GameStateFactory;
+using Match3OOAP.GameLogic.Statistics;
 using Match3OOAP.InputHandle;
 
 namespace Match3OOAP.GameLifeCycle
@@ -42,6 +43,7 @@ namespace Match3OOAP.GameLifeCycle
 
         #endregion
         
+        
         #region Дополнительные запросы
 
         public int GetInitializationStatus()
@@ -57,9 +59,15 @@ namespace Match3OOAP.GameLifeCycle
         
         #endregion
 
-        protected virtual GameStateFactory GetGameStateFactory() => new GameStateFactory();
+        protected virtual GameController GetGameController()
+        {
+            IScore score = new ScoreImpl();
+            IMoveHistory moveHistory = new MoveHistoryImpl();
 
-        protected virtual GameController GetGameController() => new GameController(GetGameStateFactory());
+            GameStateFactory factory = new GameStateFactory(score, moveHistory);
+            
+            return new GameController(factory);
+        }
         
     }
 }

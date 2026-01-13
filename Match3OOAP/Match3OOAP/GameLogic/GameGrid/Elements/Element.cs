@@ -4,7 +4,7 @@ namespace Match3OOAP.GameLogic.GameGrid
 {
     public abstract class Element : IEquatable<Element>
     {
-        protected abstract string Name { get; }
+        public abstract string Name { get; }
 
         public Element()
         {

@@ -2,7 +2,7 @@
 
 namespace Match3OOAP.Gui.GameScreen
 {
-    public class GameView : IGuiView
+    public class GameInfoView : IGuiView
     {
         public bool IsVisible { get; }
         

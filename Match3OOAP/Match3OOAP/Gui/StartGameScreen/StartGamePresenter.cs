@@ -8,5 +8,9 @@ namespace Match3OOAP.Gui.StartGameScreen
         {
         }
 
+        public override void UpdateViewImmedaitely()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

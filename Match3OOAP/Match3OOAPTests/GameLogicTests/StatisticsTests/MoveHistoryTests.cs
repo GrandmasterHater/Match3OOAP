@@ -3,7 +3,7 @@
 namespace Match3OOAPTests.GameLogicTests.StatisticsTests
 {
     [TestFixture]
-    public class MoveHistoryTests
+    public class MoveHistoryImplTests
     {
         
     }

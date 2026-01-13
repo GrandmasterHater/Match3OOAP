@@ -1,6 +1,6 @@
 ﻿namespace Match3OOAP.GameLogic.Core
 {
-    public class Coordinate
+    public struct Coordinate
     {
         public int Row { get; private set; }
         

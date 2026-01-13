@@ -16,7 +16,7 @@ namespace Match3OOAP.GameLifeCycle.GameStateManagement
         public GameController(IGameStateFactory gameStateFactory)
         {
             _gameStateFactory = gameStateFactory ?? throw new ArgumentNullException(nameof(gameStateFactory));
-            _currentState = _gameStateFactory.GetState<ReadyState>();
+            _currentState = _gameStateFactory.GetReadyState();
             _currentState.SetState();
         }
 

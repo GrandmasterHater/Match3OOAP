@@ -8,71 +8,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bea8de2-4fad-4681-bf35-2524512fbd93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameController/GameController/GameStates/ClosedState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameController/GameController/GameStates/FinishedState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameController/GameController/GameStates/NotReadyState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameController/GameController/GameStates/ReadyState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameController/GameController/GameStates/RunState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/AutoApplicableBonus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/AutoBonusContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/BonusId.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/ManualApplicableBonus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/MoveHandlers/SwapMoveHandlersChain/ApplySwap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/MoveHandlers/SwapMoveHandlersChain/ValidateSwap.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAPTests/GameControllerTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Match3OOAP.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Match3OOAP.dir/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Match3OOAP.dir/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Match3OOAP.dir/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Match3OOAP/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Match3OOAP/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Match3OOAP/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnalysisClasses.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationLayer/GameController/GameController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationLayer/GameController/GameState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationLayer/GameController/GameStateName.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationLayer/GameController/IGameStateFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationLayer/GameRoot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoundariesOfSystem.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClustersDescription.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DesignClasses.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/BonusSystem/Bonus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Core/Combination.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Core/Grid.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Core/RandomElementsGenerator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/GameLogicFacade.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Statistics/MoveHistory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameLogic/Statistics/Score.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gui/EndGameScreen/EndGamePresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gui/EndGameScreen/EndGameView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gui/GameScreen/GamePresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gui/GameScreen/GameView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gui/GuiPresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gui/GuiView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gui/StartGameScreen/StartGamePresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gui/StartGameScreen/StartGameView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InputHandle/AsyncInputListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModulesDescription.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RealisationClasses.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RejectingBadClasses.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SystemDescription.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Match3OOAP.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Match3OOAP.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Match3OOAP.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Match3OOAP.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Match3OOAP.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Match3OOAP.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Match3OOAP.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Match3OOAP.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Descriptions/ReusableClasses.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Combinations/Combination.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Combinations/CombinationImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementA.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementB.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementC.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementD.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementE.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementH.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/GridImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/IGrid.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/IMoveFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/ApplyAutoBonusesStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/CheckNextMoveAvailableStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/CheckSwapPossibleStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Factory/IStepFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Factory/StepFactoryImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/FindBonusesStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/FindCombinationBySwapStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/FinishGameStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/GenerateNewElementsStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/MoveDownElementsStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/RemoveCombinationFromGridStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Step.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/StepReader/IStepReader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/UpdateScoreStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/Strategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/BonusApplyStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/MoveResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/MoveStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/SwapStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/IScore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/MoveHistoryImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/GameSection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Helpers/AssertionUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Match3OOAP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Match3OOAP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameRoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStateFactory/GameStateFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStateFactory/GameStateFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStateFactory/IGameStateFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStateFactory/IGameStateFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/ClosedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/ClosedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/FinishedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/FinishedState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/ReadyState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/ReadyState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/RunState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/RunState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Combination.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Coordinate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Coordinate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Element.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/Element.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/RandomElementsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/RandomElementsGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/Move.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/MoveHandleChain/MoveHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/MoveResult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/MoveHistory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/IMoveHistory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/Score.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/EndGameScreen/FinishGamePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/EndGameScreen/FinishGamePresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GamePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GamePresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GridPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GridPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GuiPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GuiPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/IGuiPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/IPresentable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Match3OOAP.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Match3OOAP.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/GameLogicTests/GameMoveTests/MoveTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/GameLogicTests/GameMoveTests/StrategyTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/GameLogicTests/StatisticsTests/MoveHistoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/GameLogicTests/StatisticsTests/MoveHistoryTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/Match3OOAPTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/Match3OOAPTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.csproj.AssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +81,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3789ee403a53437cbb6b5d9ab6311f51573620/c8/039d58b9/ICollection`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c9e847ed2baf42848d70833560c740343609b0/c4/6b214594/LinkedList`1.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -91,21 +95,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "SolutionBuilderGeneralOptionsPage",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Match3OOAP" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -136,7 +140,11 @@
       <updated>1767866007318</updated>
       <workItem from="1767866008497" duration="121000" />
       <workItem from="1767866139336" duration="15802000" />
-      <workItem from="1767947730395" duration="3807000" />
+      <workItem from="1767947730395" duration="26918000" />
+      <workItem from="1768051282323" duration="15446000" />
+      <workItem from="1768127075566" duration="490000" />
+      <workItem from="1768197396528" duration="23749000" />
+      <workItem from="1768285233965" duration="10948000" />
     </task>
     <servers />
   </component>
@@ -144,6 +152,17 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

@@ -3,15 +3,15 @@ using Match3OOAP.Gui;
 
 namespace Match3OOAP.InputHandle
 {
-    public abstract class GuiPresenter<TView> : IGuiPresenter where TView : class, IGuiView
+    public abstract class GuiPresenter<TView> : IPresentable where TView : class, IGuiView
     {
         protected TView View { get; }
 
         #region Конструктор
 
-        protected GuiPresenter(TView view)
+        protected GuiPresenter(TView infoView)
         {
-            View = view ?? throw new ArgumentNullException(nameof(view));
+            View = infoView ?? throw new ArgumentNullException(nameof(infoView));
         }
 
         #endregion
@@ -48,6 +48,8 @@ namespace Match3OOAP.InputHandle
                 // todo: преобразовать в статус
             }
         }
+
+        public abstract void UpdateViewImmedaitely();
 
         #endregion
         

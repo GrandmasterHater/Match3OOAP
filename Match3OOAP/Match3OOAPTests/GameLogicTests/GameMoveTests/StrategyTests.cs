@@ -3,7 +3,7 @@
 namespace Match3OOAPTests.GameLogicTests.GameMove
 {
     [TestFixture]
-    public class MoveTests
+    public class StrategyTests
     {
         [Test]
         public void Constructor_NullArguments_ThrowsArgumentNullException()

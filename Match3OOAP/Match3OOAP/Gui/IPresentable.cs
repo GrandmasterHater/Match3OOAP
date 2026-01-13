@@ -1,9 +1,11 @@
 ﻿namespace Match3OOAP.InputHandle
 {
-    public interface IGuiPresenter
+    public interface IPresentable
     {
         void Activate();
         
         void Deactivate();
+        
+        void UpdateViewImmedaitely();
     }
 }

@@ -65,7 +65,7 @@
         <Compile Include="GameLogicTests\BonusSystemTests\BonusIdTests.cs" />
         <Compile Include="GameLogicTests\BonusSystemTests\BonusTests.cs" />
         <Compile Include="GameLogicTests\BonusSystemTests\ManualApplicableBonusTests.cs" />
-        <Compile Include="GameLogicTests\GameMoveTests\MoveTests.cs" />
+        <Compile Include="GameLogicTests\GameMoveTests\StrategyTests.cs" />
         <Compile Include="GameLogicTests\GridTests\CoordinateTests.cs" />
         <Compile Include="GameLogicTests\GridTests\GridTests.cs" />
         <Compile Include="GameLogicTests\StatisticsTests\MoveHistoryTests.cs" />
