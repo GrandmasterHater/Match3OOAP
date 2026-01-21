@@ -1,0 +1,11 @@
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\bin\Release\net481\Match3OOAP.exe.config
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\bin\Release\net481\Match3OOAP.exe
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\bin\Release\net481\Match3OOAP.pdb
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Release\net481\Match3OOAP.csproj.AssemblyReference.cache
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Release\net481\Match3OOAP.GeneratedMSBuildEditorConfig.editorconfig
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Release\net481\Match3OOAP.AssemblyInfoInputs.cache
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Release\net481\Match3OOAP.AssemblyInfo.cs
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Release\net481\Match3OOAP.csproj.CoreCompileInputs.cache
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Release\net481\Match3OOAP.sourcelink.json
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Release\net481\Match3OOAP.exe
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Release\net481\Match3OOAP.pdb

@@ -1,0 +1,15 @@
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\bin\Debug\net8.0\Match3OOAP.exe
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\bin\Debug\net8.0\Match3OOAP.deps.json
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\bin\Debug\net8.0\Match3OOAP.runtimeconfig.json
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\bin\Debug\net8.0\Match3OOAP.dll
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\bin\Debug\net8.0\Match3OOAP.pdb
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\net8.0\Match3OOAP.GeneratedMSBuildEditorConfig.editorconfig
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\net8.0\Match3OOAP.AssemblyInfoInputs.cache
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\net8.0\Match3OOAP.AssemblyInfo.cs
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\net8.0\Match3OOAP.csproj.CoreCompileInputs.cache
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\net8.0\Match3OOAP.sourcelink.json
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\net8.0\Match3OOAP.dll
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\net8.0\refint\Match3OOAP.dll
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\net8.0\Match3OOAP.pdb
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\net8.0\Match3OOAP.genruntimeconfig.cache
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\obj\Debug\net8.0\ref\Match3OOAP.dll

@@ -20,3 +20,4 @@ J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPT
 J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPTests\bin\Debug\Castle.Core.dll
 J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPTests\bin\Debug\Moq.dll
 J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPTests\bin\Debug\Castle.Core.xml
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPTests\bin\Debug\Match3OOAP.exe.config
