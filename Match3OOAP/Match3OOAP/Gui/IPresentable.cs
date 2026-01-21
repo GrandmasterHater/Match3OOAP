@@ -7,5 +7,7 @@
         void Deactivate();
         
         void UpdateViewImmedaitely();
+        
+        void UpdateData();
     }
 }

@@ -5,6 +5,8 @@ namespace Match3OOAP.GameLogic.GameGrid
     public abstract class Element : IEquatable<Element>
     {
         public abstract string Name { get; }
+        
+        public static T Create<T>() where T : Element, new() => new T();
 
         public Element()
         {
@@ -22,7 +24,7 @@ namespace Match3OOAP.GameLogic.GameGrid
             return typeof(Element).IsAssignableFrom(obj.GetType()) && Equals((Element)obj);
         }
 
-        public bool Equals(Element other)
+        public bool Equals(Element? other)
         {
             if (other is null) 
                 return false;

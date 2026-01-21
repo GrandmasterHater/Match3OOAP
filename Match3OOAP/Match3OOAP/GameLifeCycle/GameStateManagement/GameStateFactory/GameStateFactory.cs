@@ -19,19 +19,19 @@ namespace Match3OOAP.GameLifeCycle.GameStateManagement.GameStateFactory
             _moveHistory = moveHistory;
         }
         
-        public GameState GetReadyState()
+        public GameState GetReadyState(GameController gameController)
         {
-            return new ReadyState();
+            return new ReadyState(gameController);
         }
 
-        public GameState GetRunState()
+        public GameState GetRunState(GameController gameController)
         {
-            return new RunState(_score, _moveHistory);
+            return new RunState(_score, _moveHistory, gameController);
         }
 
-        public GameState GetFinishedState()
+        public GameState GetFinishedState(GameController gameController)
         {
-            return new FinishedState(_score, _moveHistory);
+            return new FinishedState(_score, _moveHistory, gameController);
         }
 
         public GameState GetClosedState()

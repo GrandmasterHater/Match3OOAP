@@ -1,20 +1,61 @@
 ﻿using System;
-using Match3OOAP.InputHandle;
+using Match3OOAP.Helpers;
 
 namespace Match3OOAP.Gui.GameScreen
 {
-    public class BonusView : IGuiView
+    public class BonusView : IBonusView
     {
-        public bool IsVisible { get; }
-        public event Action<string> OnGetUserInput;
+        private string _autoBonusText;
+        private string _manualBonusText;
+        
+        public bool IsVisible { get; private set; }
+
+        public BonusView()
+        {
+            IsVisible = false;
+            _autoBonusText = string.Empty;
+            _manualBonusText = string.Empty;
+        }
+        
         public void Show()
         {
-            throw new NotImplementedException();
+            DrawText();
+            IsVisible = true;
         }
 
         public void Hide()
         {
-            throw new NotImplementedException();
+            DrawText();
+            IsVisible = false;
+        }
+
+        public void Redraw()
+        {
+            DrawText();
+        }
+
+        public void SetAutoBonusText(string text)
+        {
+            text.AssertNotNull();
+
+            _autoBonusText = text;
+        }
+
+        public string GetAutoBonusText() => _autoBonusText;
+
+        public void SetManualBonusText(string text)
+        {
+            text.AssertNotNull();
+
+            _manualBonusText = text;
+        }
+
+        public string GetManualBonusText() => _manualBonusText;
+
+        private void DrawText()
+        {
+            Console.WriteLine(_autoBonusText);
+            Console.WriteLine(_manualBonusText);
         }
     }
 }

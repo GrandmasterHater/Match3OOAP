@@ -2,34 +2,42 @@
 using Match3OOAP.GameLogic.Statistics;
 using Match3OOAP.Gui;
 using Match3OOAP.Gui.StartGameScreen;
+using Match3OOAP.Helpers;
 using Match3OOAP.InputHandle;
 
 namespace Match3OOAP.GameLifeCycle.GameStateManagement.GameStates
 {
     public class ReadyState : GameState
     {
-        private IPresentable _guiPresenter;
+        private readonly GameController _gameController;
+        private readonly IPresentable _guiPresenter;
         
-        public sealed override string Name => nameof(ReadyState);
+        public override GameStatus GameStatus => GameStatus.ReadyToGame;
 
         // Постусловие: экран стартового меню готов к показу.
-        public ReadyState()
+        public ReadyState(GameController gameController)
         {
+            gameController.AssertNotNull();
+            
+            _gameController = gameController;
             _guiPresenter = GetReadyStatePresenter();
         }
 
         // Постусловие: экран стартового меню активен.
-        public sealed override void SetState()
+        protected override void OnSetState()
         {
             _guiPresenter.Activate();
         }
 
         // Постусловие: экран стартового отключен.
-        public sealed override void ResetState()
+        protected override void OnResetState()
         {
             _guiPresenter.Deactivate();
         }
 
-        protected virtual IPresentable GetReadyStatePresenter() => new StartGamePresenter(new StartGameView());
+        protected virtual IPresentable GetReadyStatePresenter()
+        {
+            return new ReadyGamePresenter(_gameController, ConsoleAsyncInputListener.Instance, new ReadyGameView());
+        }
     }
 }

@@ -1,27 +1,36 @@
-﻿using Match3OOAP.GameLogic.Core;
+﻿using System.Collections.Generic;
+using Match3OOAP.GameLogic.BonusSystem;
+using Match3OOAP.GameLogic.Core;
+using Match3OOAP.GameLogic.GameGrid;
 
 namespace Match3OOAP.GameLogic.GameMove.StepCommands
 {
     public interface IStepFactory
     {
-        Step CreateApplyAutoBonusesStep();
+        ApplyAutoBonusesStep CreateApplyAutoBonusesStep();
         
-        Step CreateCheckNextMoveAvailableStep();
+        CheckNextMoveAvailableStep CreateCheckNextMoveAvailableStep();
+
+        CheckSwapPossibleStep CreateCheckSwapPossibleStep(Coordinate firstCoordinate, Coordinate secondCoordinate);
         
-        Step CreateCheckSwapPossibleStep(Coordinate firstCoordinate, Coordinate secondCoordinate);
+        FindBonusesStep CreateFindBonusesStep(IReadOnlyList<Combination> combination);
         
-        Step CreateFindBonusesStep(Combination combination);
+        FindCombinationsStep CreateFindCombinationsStepByCoordinates(IReadOnlyList<Coordinate> coordinates);
         
-        Step CreateFindCombinationBySwapStep(Coordinate firstCoordinate, Coordinate secondCoordinate);
+        FindCombinationsStep CreateFindCombinationsOnGrid();
         
-        Step CreateFinishGameStep();
+        FindCombinationsStep CreateFindCombinationsBySwapStep(Coordinate firstCoordinate, Coordinate secondCoordinate);
         
-        Step CreateGenerateNewElementsStep();
+        GenerateNewElementsStep CreateGenerateNewElementsStep();
         
-        Step CreateMoveDownElementsStep();
+        MoveDownElementsStep CreateMoveDownElementsStep();
         
-        Step CreateRemoveCombinationFromGridStep(Combination combination);
+        RemoveCombinationFromGridStep CreateRemoveCombinationFromGridStep(IReadOnlyList<Combination> combination);
         
-        Step CreateUpdateScoreStep(Combination combination);
+        UpdateScoreStep CreateUpdateScoreStep(IReadOnlyList<Combination> combinations);
+        
+        ApplySwapStep CreateApplySwapStep(Coordinate firstCoordinate, Coordinate secondCoordinate);
+        
+        ApplyManualBonusStep CreateApplyManualBonusStep(BonusId bonusId);
     }
 }

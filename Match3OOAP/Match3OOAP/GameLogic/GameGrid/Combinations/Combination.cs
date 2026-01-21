@@ -1,9 +1,12 @@
-﻿using Match3OOAP.GameLogic.GameGrid;
+﻿using System.Collections.Generic;
+using Match3OOAP.GameLogic.GameGrid;
 
 namespace Match3OOAP.GameLogic.Core
 {
     public abstract class Combination
     {
+        public const int MIN_ELEMENTS_COUNT_IN_LINE = 3;
+        
         #region Конструктор
 
         // Постусловие: создана пустая комбинация.
@@ -22,6 +25,10 @@ namespace Match3OOAP.GameLogic.Core
         // Для какого типа элемента комбинация.
         public abstract Element GetElementType();
 
+        public abstract IReadOnlyList<Coordinate> GetCoordinates();
+        
+        public abstract CombinationImpl.Shape GetShape();
+
         #endregion
         
         #region Команды
@@ -30,10 +37,7 @@ namespace Match3OOAP.GameLogic.Core
         // - сетка не null.
         // - координата не null.
         // Постусловие: если есть совпадения элементов, то комбинация найдена.
-        public abstract void TryFind(IGrid grid, Coordinate fromCoordinate);
-        
-        // Постусловие: комбинация очищена - стала пустой.
-        public abstract void Clear();
+        public abstract void Find(IGrid grid, Coordinate coordinate, Element element);
 
         #endregion
     }

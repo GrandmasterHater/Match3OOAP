@@ -1,4 +1,5 @@
-﻿using Match3OOAP.GameLogic.Core;
+﻿using System.Collections.Generic;
+using Match3OOAP.GameLogic.Core;
 
 namespace Match3OOAP.GameLogic.GameGrid
 {
@@ -17,14 +18,14 @@ namespace Match3OOAP.GameLogic.GameGrid
         #region Команды
         
         // Постусловие: в колонках где под элементами есть пустые ячейки, элементы перемещены вниз. 
-        void MoveDownElements();
+        IReadOnlyList<MoveDownElement> MoveDownElements();
         
         // Постусловие: элемент удалён по указанным координатам.
         void RemoveElement(Coordinate coordinate);
         
         // Предусловие: в сетке есть пустые места.
         // Постусловие: пустые ячейки заполнены случайными элементами.
-        void FillWithElements();
+        IReadOnlyList<FilledPlace> FillEmptyPlaces();
         
         // Предусловие:
         // - в указанных координатах есть элементы.
@@ -40,10 +41,14 @@ namespace Match3OOAP.GameLogic.GameGrid
         bool IsCellEmpty(Coordinate coordinate);
         
         bool HasEmptyCells();
+
+        IReadOnlyList<Coordinate> GetEmptyCells();
         
-        int GetElement(Coordinate coordinate);
+        Element? GetElement(Coordinate coordinate);
+
+        public Size GetSize();
         
-        bool IsSwapPossible(Coordinate firstCoordinate, Coordinate secondCoordinate);
+        SwapAvailabilityResult IsSwapPossible(Coordinate firstCoordinate, Coordinate secondCoordinate);
         
         #endregion
     }

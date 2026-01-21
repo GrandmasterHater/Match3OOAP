@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Match3OOAP.Helpers
 {
@@ -8,9 +9,16 @@ namespace Match3OOAP.Helpers
         {
             if (value == null)
             {
-                throw new ArgumentNullException(nameof(value)); 
+                throw new ArgumentNullException(typeof(T).Name); 
             }
         }
-            
+        
+        public static void AssertItemsNotNull<T>(this IEnumerable<T> values) where T : class
+        {
+            foreach (T value in values)
+            {
+                AssertNotNull(value);
+            }
+        }
     }
 }

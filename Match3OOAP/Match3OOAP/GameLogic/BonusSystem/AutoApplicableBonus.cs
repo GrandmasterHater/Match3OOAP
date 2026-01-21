@@ -2,6 +2,6 @@
 {
     public abstract class AutoApplicableBonus : Bonus
     {
-        public abstract bool IsAutoApplyAvailable();
+        public sealed override bool IsAutoApplyAvailable() => true;
     }
 }

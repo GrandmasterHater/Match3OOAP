@@ -2,15 +2,17 @@
 {
     public interface IStepReader
     {
-        void Read(ApplyAutoBonusesStep checkSwapPossibleStep);
+        void Read(ApplyAutoBonusesStep applyAutoBonusesStep);
         void Read(CheckSwapPossibleStep checkSwapPossibleStep);
-        void Read(FindBonusesStep checkSwapPossibleStep);
-        void Read(CheckNextMoveAvailableStep checkSwapPossibleStep);
-        void Read(FindCombinationBySwapStep checkSwapPossibleStep);
-        void Read(FinishGameStep checkSwapPossibleStep);
-        void Read(GenerateNewElementsStep checkSwapPossibleStep);
-        void Read(MoveDownElementsStep checkSwapPossibleStep);
-        void Read(UpdateScoreStep checkSwapPossibleStep);
-        void Read(RemoveCombinationFromGridStep checkSwapPossibleStep);
+        void Read(FindBonusesStep findBonusesStep);
+        void Read(FindCombinationsStep findCombinationsStep);
+        void Read(GenerateNewElementsStep generateNewElementsStep);
+        void Read(MoveDownElementsStep moveDownElementsStep);
+        void Read(UpdateScoreStep updateScoreStep);
+        void Read(RemoveCombinationFromGridStep removeCombinationFromGridStep);
+        void Read(ApplySwapStep applySwapStep);
+        void Read(FindCombinationsBySwapStep findCombinationsBySwapStep);
+        void Read(CheckNextMoveAvailableStep removeCombinationFromGridStep);
+        void Read(ApplyManualBonusStep removeCombinationFromGridStep);
     }
 }

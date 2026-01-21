@@ -8,84 +8,161 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bea8de2-4fad-4681-bf35-2524512fbd93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/Descriptions/ReusableClasses.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Combinations/Combination.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Combinations/CombinationImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementA.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementB.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementC.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementD.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementE.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/ElementH.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/GridImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/IGrid.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/IMoveFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/ApplyAutoBonusesStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/CheckNextMoveAvailableStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/CheckSwapPossibleStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Factory/IStepFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Factory/StepFactoryImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/FindBonusesStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/FindCombinationBySwapStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/FinishGameStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/GenerateNewElementsStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/MoveDownElementsStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/RemoveCombinationFromGridStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Step.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/StepReader/IStepReader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/UpdateScoreStep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/Strategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/BonusApplyStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/MoveResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/MoveStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/SwapStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/IScore.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/MoveHistoryImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/GameSection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Match3OOAP/Helpers/AssertionUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStatus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/AutoBonus/RemoveLineBonus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/BonusFactory/BonusFactoryImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/BonusFactory/IBonusFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/IBonusContainer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/ManualBonus/RegenerateBonusId.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/ManualBonus/RegenerateGridBonus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/FilledPlace.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/IRandomElementsGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/MoveDownElement.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/SwapAvailabilityResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Size.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/IMove.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/IMoveStrategyFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/MoveImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/MoveStrategyFactoryImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/ApplyBonusResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/ApplySwapStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/CheckSwapPossibleStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/FindCombinationsBySwapStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/FindCombinationsStep.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/FindCombinationsStepByCoordinates.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/FindCombinationsStepOnGrid.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/Score/ScoreImpl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/FinishGameScreen/FinishGamePresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/FinishGameScreen/FinishGameView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/FinishGameScreen/IFinishGameView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/ImmediatePresentationStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/BonusPresenter/IBonusPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/HowToPlayInfoPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/InvalidMoveInfoPresenter/IInvalidMoveInfoPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/InvalidMoveInfoPresenter/InvalidMoveInfoPresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/ScorePresenter/GameScorePresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/ScorePresenter/IGameScorePresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/StepByStepPresentationStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/GameInfoView/GameInfoView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/GameInfoView/IGameInfoView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/GameScoreView/GameScoreView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/GameScoreView/IGameScoreView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/IBonusView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/IGridView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/ReadyGameScreen/IReadyGameView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/ReadyGameScreen/ReadyGamePresenter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/Gui/ReadyGameScreen/ReadyGameView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Match3OOAP/InputHandle/IConsoleAsyncInputListener.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Match3OOAP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Match3OOAP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameRoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameRoot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStateFactory/GameStateFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStateFactory/GameStateFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStateFactory/IGameStateFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStateFactory/IGameStateFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/ClosedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/ClosedState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/FinishedState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/FinishedState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/ReadyState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/ReadyState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/RunState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLifeCycle/GameStateManagement/GameStates/RunState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Combination.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/AutoApplicableBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/AutoApplicableBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/Bonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/Bonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/BonusContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/BonusContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/ManualApplicableBonus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/BonusSystem/ManualApplicableBonus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Combinations/Combination.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Combinations/Combination.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Combinations/CombinationImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Combinations/CombinationImpl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Coordinate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Coordinate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Element.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/Element.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/RandomElementsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/RandomElementsGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/Move.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/MoveHandleChain/MoveHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/MoveResult.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/MoveHistory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/IMoveHistory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/Score.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/EndGameScreen/FinishGamePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/EndGameScreen/FinishGamePresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GamePresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GamePresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GridPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GridPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/Element.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Elements/Element.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/GridImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/GridImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/IGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/IGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/RandomElementsGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameGrid/Grid/RandomElementsGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/IMoveFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/ApplyAutoBonusesStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/ApplyAutoBonusesStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/CheckNextMoveAvailableStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/CheckNextMoveAvailableStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/CheckSwapPossibleStep.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Factory/IStepFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Factory/IStepFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Factory/StepFactoryImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Factory/StepFactoryImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/FindBonusesStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/FindBonusesStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/FindCombinationBySwapStep.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/FinishGameStep.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/GenerateNewElementsStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/GenerateNewElementsStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/MoveDownElementsStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/MoveDownElementsStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/RemoveCombinationFromGridStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/RemoveCombinationFromGridStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Step.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/IStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/StepReader/IStepReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/StepReader/IStepReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/UpdateScoreStep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/UpdateScoreStep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/Strategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Helpers/Strategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/BonusApplyStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/MoveStrategy/BonusApplyStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/MoveResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/MoveStrategy/MoveResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/MoveStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/MoveStrategy/MoveStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/UserCommands/SwapStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/MoveStrategy/SwapStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/IMoveHistory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/MoveHistory/IMoveHistory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/IScore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/Score/IScore.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/MoveHistoryImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/GameLogic/Statistics/MoveHistory/MoveHistoryImpl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/EndGameScreen/FinishGamePresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/EndGameScreen/FinishGameView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/GameSection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/GameScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/BonusPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/BonusPresenter/BonusPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GameInfoPresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GameScore.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GridPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GridPresenter/GridPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/IGridPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/GridPresenter/IGridPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/IMovePresentationStrategy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/BonusView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/BonusView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/GameInfoView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/GameStatisticView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/GridView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Views/GridView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/GuiPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/GuiPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/IGuiPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/IPresentable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/IGuiView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/IGuiView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/IPresentable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Gui/IPresentable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/StartGameScreen/StartGamePresenter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Gui/StartGameScreen/StartGameView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Helpers/AssertionUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Helpers/AssertionUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/InputHandle/AsyncInputListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/InputHandle/ConsoleAsyncInputListener.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAP/Match3OOAP.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Match3OOAP.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/GameLogicTests/GameMoveTests/MoveTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/GameLogicTests/GameMoveTests/StrategyTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/GameLogicTests/StatisticsTests/MoveHistoryTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/GameLogicTests/StatisticsTests/MoveHistoryTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/bin/Debug/Match3OOAP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/bin/Debug/Match3OOAP.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/bin/Debug/Match3OOAP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/bin/Debug/Match3OOAP.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/obj/Debug/Match3OOAP.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/obj/Debug/Match3OOAP.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/obj/Debug/Match3OOAP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/obj/Debug/Match3OOAP.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAP/obj/Debug/Match3OOAP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAP/obj/Debug/Match3OOAP.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/GameLifeCycleTests/GameStateManagement/GameControllerTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/GameLifeCycleTests/GameStateManagement/GameControllerTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAPTests/Match3OOAPTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/Match3OOAPTests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/bin/Debug/Match3OOAP.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/bin/Debug/Match3OOAP.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/bin/Debug/Match3OOAP.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/bin/Debug/Match3OOAP.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/bin/Debug/Match3OOAPTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/bin/Debug/Match3OOAPTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/bin/Debug/Match3OOAPTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/bin/Debug/Match3OOAPTests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/obj/Debug/Match3OOAPTests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Match3OOAPTests/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/Match3OOAPTests/packages.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2465977aa5d94ef79e534c432288152117abd0/f0/6a77a307/HashSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3789ee403a53437cbb6b5d9ab6311f51573620/1a/8c5b5955/List`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3789ee403a53437cbb6b5d9ab6311f51573620/3b/7b433a85/IReadOnlyList`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3789ee403a53437cbb6b5d9ab6311f51573620/62/deb865f4/TaskScheduler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3789ee403a53437cbb6b5d9ab6311f51573620/a5/c279074c/SynchronizationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3789ee403a53437cbb6b5d9ab6311f51573620/c4/d722ac89/Comparison`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3789ee403a53437cbb6b5d9ab6311f51573620/c8/039d58b9/ICollection`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c9e847ed2baf42848d70833560c740343609b0/24/db0440a5/ISet`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c9e847ed2baf42848d70833560c740343609b0/c4/6b214594/LinkedList`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b770cdf567b899d37f2f4b8fab90c9d56814454e114921719e16d8ecb3544/IVerifies.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Match3OOAP/GameLogic/GameMove/StepCommands/Steps/CheckSwapPossibleStep.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
@@ -97,6 +174,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;.NET Project.Match3OOAP.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
@@ -144,13 +222,25 @@
       <workItem from="1768051282323" duration="15446000" />
       <workItem from="1768127075566" duration="490000" />
       <workItem from="1768197396528" duration="23749000" />
-      <workItem from="1768285233965" duration="10948000" />
+      <workItem from="1768285233965" duration="12797000" />
+      <workItem from="1768372484312" duration="11138000" />
+      <workItem from="1768456449767" duration="20111000" />
+      <workItem from="1768543231615" duration="27867000" />
+      <workItem from="1768641670838" duration="23971000" />
+      <workItem from="1768717994252" duration="26497000" />
+      <workItem from="1768801971908" duration="11001000" />
+      <workItem from="1768836636414" duration="7900000" />
+      <workItem from="1768887586339" duration="26301000" />
+      <workItem from="1768972899182" duration="16693000" />
+      <workItem from="1768992636493" duration="6730000" />
+      <workItem from="1768999711907" duration="4039000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -165,5 +255,37 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/BonusPresenter/BonusPresenter.cs</url>
+          <line>28</line>
+          <properties documentPath="J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\Gui\GameScreen\Presenters\BonusPresenter\BonusPresenter.cs" containingFunctionPresentation="Method 'OnActivate'">
+            <startOffsets>
+              <option value="1007" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1022" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Match3OOAP/Gui/GameScreen/Presenters/BonusPresenter/BonusPresenter.cs</url>
+          <line>72</line>
+          <properties documentPath="J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAP\Gui\GameScreen\Presenters\BonusPresenter\BonusPresenter.cs" containingFunctionPresentation="Method 'UpdateViewImmedaitely'">
+            <startOffsets>
+              <option value="2329" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2343" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

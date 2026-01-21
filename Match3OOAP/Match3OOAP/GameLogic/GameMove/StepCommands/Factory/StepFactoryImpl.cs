@@ -1,57 +1,103 @@
-﻿using Match3OOAP.GameLogic.Core;
+﻿using System.Collections.Generic;
+using Match3OOAP.GameLogic.BonusSystem;
+using Match3OOAP.GameLogic.Core;
+using Match3OOAP.GameLogic.GameGrid;
+using Match3OOAP.GameLogic.Statistics;
+using Match3OOAP.Helpers;
 
 namespace Match3OOAP.GameLogic.GameMove.StepCommands
 {
     public class StepFactoryImpl : IStepFactory
     {
-        public Step CreateApplyAutoBonusesStep()
+        private readonly IGrid _grid;
+        private readonly IScore _score;
+        private readonly IBonusFactory _bonusFactory;
+        private readonly IBonusContainer<AutoApplicableBonus> _autoBonusContainer;
+        private readonly IBonusContainer<ManualApplicableBonus> _manualBonusContainer;
+
+        public StepFactoryImpl(
+            IGrid grid, 
+            IScore score, 
+            IBonusFactory bonusFactory,
+            IBonusContainer<AutoApplicableBonus> autoBonusContainer, 
+            IBonusContainer<ManualApplicableBonus> manualBonusContainer)
         {
-            throw new System.NotImplementedException();
+            grid.AssertNotNull();
+            score.AssertNotNull();
+            bonusFactory.AssertNotNull();
+            autoBonusContainer.AssertNotNull();
+            manualBonusContainer.AssertNotNull();
+            
+            _grid = grid;
+            _score = score;
+            _bonusFactory = bonusFactory;
+            _autoBonusContainer = autoBonusContainer;
+            _manualBonusContainer = manualBonusContainer;
+        }
+        
+        public ApplyAutoBonusesStep CreateApplyAutoBonusesStep()
+        {
+            return new ApplyAutoBonusesStep(_grid, _autoBonusContainer);
         }
 
-        public Step CreateCheckNextMoveAvailableStep()
+        public CheckNextMoveAvailableStep CreateCheckNextMoveAvailableStep()
         {
-            throw new System.NotImplementedException();
+            return new CheckNextMoveAvailableStep(_grid, _manualBonusContainer);
         }
 
-        public Step CreateCheckSwapPossibleStep(Coordinate firstCoordinate, Coordinate secondCoordinate)
+        public CheckSwapPossibleStep CreateCheckSwapPossibleStep(Coordinate firstCoordinate, Coordinate secondCoordinate)
         {
-            throw new System.NotImplementedException();
+            return new CheckSwapPossibleStep(_grid, firstCoordinate, secondCoordinate);
         }
 
-        public Step CreateFindBonusesStep(Combination combination)
+        public FindBonusesStep CreateFindBonusesStep(IReadOnlyList<Combination> combinations)
         {
-            throw new System.NotImplementedException();
+            return new FindBonusesStep(combinations, _bonusFactory, _autoBonusContainer, _manualBonusContainer);
         }
 
-        public Step CreateFindCombinationBySwapStep(Coordinate firstCoordinate, Coordinate secondCoordinate)
+        public FindCombinationsStep CreateFindCombinationsStepByCoordinates(IReadOnlyList<Coordinate> coordinates)
         {
-            throw new System.NotImplementedException();
+            return new FindCombinationsStepByCoordinates(_grid, coordinates);
         }
 
-        public Step CreateFinishGameStep()
+        public FindCombinationsStep CreateFindCombinationsOnGrid()
         {
-            throw new System.NotImplementedException();
+            return new FindCombinationsStepOnGrid(_grid);
         }
 
-        public Step CreateGenerateNewElementsStep()
+        public FindCombinationsStep CreateFindCombinationsBySwapStep(Coordinate firstCoordinate, Coordinate secondCoordinate)
         {
-            throw new System.NotImplementedException();
+            return new FindCombinationsBySwapStep(_grid, firstCoordinate, secondCoordinate);
         }
 
-        public Step CreateMoveDownElementsStep()
+        public GenerateNewElementsStep CreateGenerateNewElementsStep()
         {
-            throw new System.NotImplementedException();
+            return new GenerateNewElementsStep(_grid);
         }
 
-        public Step CreateRemoveCombinationFromGridStep(Combination combination)
+        public MoveDownElementsStep CreateMoveDownElementsStep()
         {
-            throw new System.NotImplementedException();
+            return new MoveDownElementsStep(_grid);
         }
 
-        public Step CreateUpdateScoreStep(Combination combination)
+        public RemoveCombinationFromGridStep CreateRemoveCombinationFromGridStep(IReadOnlyList<Combination> combination)
         {
-            throw new System.NotImplementedException();
+            return new RemoveCombinationFromGridStep(_grid, combination);
+        }
+
+        public UpdateScoreStep CreateUpdateScoreStep(IReadOnlyList<Combination> combinations)
+        {
+            return new UpdateScoreStep(_score, combinations);
+        }
+
+        public ApplySwapStep CreateApplySwapStep(Coordinate firstCoordinate, Coordinate secondCoordinate)
+        {
+            return new ApplySwapStep(_grid, firstCoordinate, secondCoordinate);
+        }
+
+        public ApplyManualBonusStep CreateApplyManualBonusStep(BonusId bonusId)
+        {
+            return new ApplyManualBonusStep(_grid, bonusId, _manualBonusContainer);
         }
     }
 }

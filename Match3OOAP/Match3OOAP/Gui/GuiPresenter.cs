@@ -30,14 +30,12 @@ namespace Match3OOAP.InputHandle
                 // todo: преобразовать в статус
             }
 
-            View.OnGetUserInput += OnUserInput; 
             View.Show();
         }
 
         public void Deactivate()
         {
             View.Hide();
-            View.OnGetUserInput -= OnUserInput; 
             
             try
             {
@@ -49,6 +47,8 @@ namespace Match3OOAP.InputHandle
             }
         }
 
+        public abstract void UpdateData();
+
         public abstract void UpdateViewImmedaitely();
 
         #endregion
@@ -56,7 +56,5 @@ namespace Match3OOAP.InputHandle
         protected virtual void OnActivate() { }
         
         protected virtual void OnDeactivate() { }
-        
-        protected virtual void OnUserInput(string inputString) { }
     }
 }

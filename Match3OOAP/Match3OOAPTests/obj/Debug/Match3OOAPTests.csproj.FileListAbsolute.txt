@@ -17,3 +17,6 @@ J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPT
 J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPTests\obj\Debug\Match3OO.FB809857.Up2Date
 J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPTests\obj\Debug\Match3OOAPTests.dll
 J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPTests\obj\Debug\Match3OOAPTests.pdb
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPTests\bin\Debug\Castle.Core.dll
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPTests\bin\Debug\Moq.dll
+J:\С.Бобровский\ООАП\ООАП 3\Match3OOAP\Match3OOAP\Match3OOAPTests\bin\Debug\Castle.Core.xml

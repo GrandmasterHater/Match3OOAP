@@ -13,6 +13,8 @@
         <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <LangVersion>8</LangVersion>
+        <Nullable>enable</Nullable>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -41,6 +43,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="GameLifeCycle\GameStateManagement\GameController.cs" />
+        <Compile Include="GameLifeCycle\GameStateManagement\GameStatus.cs" />
         <Compile Include="GameLifeCycle\GameStateManagement\GameState.cs" />
         <Compile Include="GameLifeCycle\GameStateManagement\GameStateFactory\GameStateFactory.cs" />
         <Compile Include="GameLifeCycle\GameStateManagement\GameStateFactory\IGameStateFactory.cs" />
@@ -50,10 +53,16 @@
         <Compile Include="GameLifeCycle\GameStateManagement\GameStates\RunState.cs" />
         <Compile Include="GameLifeCycle\GameRoot.cs" />
         <Compile Include="GameLogic\BonusSystem\AutoApplicableBonus.cs" />
+        <Compile Include="GameLogic\BonusSystem\AutoBonus\RemoveLineBonus.cs" />
         <Compile Include="GameLogic\BonusSystem\Bonus.cs" />
-        <Compile Include="GameLogic\BonusSystem\BonusContainer.cs" />
+        <Compile Include="GameLogic\BonusSystem\BonusFactory\BonusFactoryImpl.cs" />
+        <Compile Include="GameLogic\BonusSystem\BonusFactory\IBonusFactory.cs" />
+        <Compile Include="GameLogic\BonusSystem\IBonusContainer.cs" />
         <Compile Include="GameLogic\BonusSystem\BonusId.cs" />
         <Compile Include="GameLogic\BonusSystem\ManualApplicableBonus.cs" />
+        <Compile Include="GameLogic\BonusSystem\BonusContainer.cs" />
+        <Compile Include="GameLogic\BonusSystem\ManualBonus\RegenerateBonusId.cs" />
+        <Compile Include="GameLogic\BonusSystem\ManualBonus\RegenerateGridBonus.cs" />
         <Compile Include="GameLogic\GameGrid\Combinations\CombinationImpl.cs" />
         <Compile Include="GameLogic\GameGrid\Combinations\Combination.cs" />
         <Compile Include="GameLogic\GameGrid\Elements\Element.cs" />
@@ -64,54 +73,79 @@
         <Compile Include="GameLogic\GameGrid\Elements\ElementD.cs" />
         <Compile Include="GameLogic\GameGrid\Elements\ElementE.cs" />
         <Compile Include="GameLogic\GameGrid\Elements\ElementH.cs" />
+        <Compile Include="GameLogic\GameGrid\Grid\FilledPlace.cs" />
         <Compile Include="GameLogic\GameGrid\Grid\GridImpl.cs" />
         <Compile Include="GameLogic\GameGrid\Grid\IGrid.cs" />
+        <Compile Include="GameLogic\GameGrid\Grid\IRandomElementsGenerator.cs" />
+        <Compile Include="GameLogic\GameGrid\Grid\MoveDownElement.cs" />
         <Compile Include="GameLogic\GameGrid\Grid\RandomElementsGenerator.cs" />
-        <Compile Include="GameLogic\GameMove\IMoveFactory.cs" />
+        <Compile Include="GameLogic\GameGrid\Grid\SwapAvailabilityResult.cs" />
+        <Compile Include="GameLogic\GameGrid\Size.cs" />
+        <Compile Include="GameLogic\GameMove\IMoveStrategyFactory.cs" />
+        <Compile Include="GameLogic\GameMove\IMove.cs" />
+        <Compile Include="GameLogic\GameMove\MoveStrategyFactoryImpl.cs" />
+        <Compile Include="GameLogic\GameMove\MoveImpl.cs" />
         <Compile Include="GameLogic\GameMove\StepCommands\Factory\StepFactoryImpl.cs" />
-        <Compile Include="GameLogic\GameMove\Strategy.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\ApplyAutoBonusesStep.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\CheckNextMoveAvailableStep.cs" />
         <Compile Include="GameLogic\GameMove\StepCommands\Factory\IStepFactory.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\FindBonusesStep.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\FinishGameStep.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\GenerateNewElementsStep.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\MoveDownElementsStep.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\RemoveCombinationFromGridStep.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\FindCombinationBySwapStep.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\CheckSwapPossibleStep.cs" />
         <Compile Include="GameLogic\GameMove\StepCommands\StepReader\IStepReader.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\UpdateScoreStep.cs" />
-        <Compile Include="GameLogic\GameMove\UserCommands\BonusApplyStrategy.cs" />
-        <Compile Include="GameLogic\GameMove\UserCommands\MoveStrategy.cs" />
-        <Compile Include="GameLogic\GameMove\UserCommands\MoveResult.cs" />
-        <Compile Include="GameLogic\GameMove\UserCommands\SwapStrategy.cs" />
-        <Compile Include="GameLogic\GameMove\StepCommands\Step.cs" />
-        <Compile Include="GameLogic\Statistics\IMoveHistory.cs" />
-        <Compile Include="GameLogic\Statistics\IScore.cs" />
-        <Compile Include="GameLogic\Statistics\MoveHistoryImpl.cs" />
-        <Compile Include="Gui\EndGameScreen\FinishGamePresenter.cs" />
-        <Compile Include="Gui\EndGameScreen\FinishGameView.cs" />
-        <Compile Include="Gui\GameScreen\GameSection.cs" />
-        <Compile Include="Gui\GameScreen\Presenters\BonusPresenter.cs" />
-        <Compile Include="Gui\GameScreen\Presenters\GameInfoPresenter.cs" />
-        <Compile Include="Gui\GameScreen\Presenters\GameScore.cs" />
-        <Compile Include="Gui\GameScreen\Presenters\GridPresenter.cs" />
-        <Compile Include="Gui\GameScreen\Presenters\IGridPresenter.cs" />
-        <Compile Include="Gui\GameScreen\Presenters\IMovePresentationStrategy.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\ApplyAutoBonusesStep.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\ApplyBonusResult.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\ApplySwapStep.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\CheckNextMoveAvailableStep.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\CheckSwapPossibleStep.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\FindBonusesStep.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\FindCombinationsBySwapStep.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\FindCombinationsStep.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\FindCombinationsStepByCoordinates.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\FindCombinationsStepOnGrid.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\GenerateNewElementsStep.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\MoveDownElementsStep.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\RemoveCombinationFromGridStep.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\Steps\UpdateScoreStep.cs" />
+        <Compile Include="GameLogic\GameMove\MoveStrategy\BonusApplyStrategy.cs" />
+        <Compile Include="GameLogic\GameMove\MoveStrategy\MoveStrategy.cs" />
+        <Compile Include="GameLogic\GameMove\MoveStrategy\MoveResult.cs" />
+        <Compile Include="GameLogic\GameMove\MoveStrategy\SwapStrategy.cs" />
+        <Compile Include="GameLogic\GameMove\StepCommands\IStep.cs" />
+        <Compile Include="GameLogic\Statistics\MoveHistory\IMoveHistory.cs" />
+        <Compile Include="GameLogic\Statistics\MoveHistory\MoveHistoryImpl.cs" />
+        <Compile Include="GameLogic\Statistics\Score\IScore.cs" />
+        <Compile Include="GameLogic\Statistics\Score\ScoreImpl.cs" />
+        <Compile Include="Gui\FinishGameScreen\FinishGamePresenter.cs" />
+        <Compile Include="Gui\FinishGameScreen\FinishGameView.cs" />
+        <Compile Include="Gui\FinishGameScreen\IFinishGameView.cs" />
+        <Compile Include="Gui\GameScreen\GameScreen.cs" />
+        <Compile Include="Gui\GameScreen\ImmediatePresentationStrategy.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\BonusPresenter\BonusPresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\BonusPresenter\IBonusPresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\HowToPlayInfoPresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\GridPresenter\GridPresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\GridPresenter\IGridPresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\InvalidMoveInfoPresenter\IInvalidMoveInfoPresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\InvalidMoveInfoPresenter\InvalidMoveInfoPresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\ScorePresenter\GameScorePresenter.cs" />
+        <Compile Include="Gui\GameScreen\Presenters\ScorePresenter\IGameScorePresenter.cs" />
+        <Compile Include="Gui\GameScreen\StepByStepPresentationStrategy.cs" />
         <Compile Include="Gui\GameScreen\Views\BonusView.cs" />
-        <Compile Include="Gui\GameScreen\Views\GameStatisticView.cs" />
-        <Compile Include="Gui\GameScreen\Views\GameInfoView.cs" />
+        <Compile Include="Gui\GameScreen\Views\GameInfoView\GameInfoView.cs" />
+        <Compile Include="Gui\GameScreen\Views\GameInfoView\IGameInfoView.cs" />
+        <Compile Include="Gui\GameScreen\Views\GameScoreView\GameScoreView.cs" />
+        <Compile Include="Gui\GameScreen\Views\GameScoreView\IGameScoreView.cs" />
         <Compile Include="Gui\GameScreen\Views\GridView.cs" />
+        <Compile Include="Gui\GameScreen\Views\IBonusView.cs" />
+        <Compile Include="Gui\GameScreen\Views\IGridView.cs" />
         <Compile Include="Gui\GuiPresenter.cs" />
         <Compile Include="Gui\IPresentable.cs" />
         <Compile Include="Gui\IGuiView.cs" />
-        <Compile Include="Gui\StartGameScreen\StartGamePresenter.cs" />
-        <Compile Include="Gui\StartGameScreen\StartGameView.cs" />
+        <Compile Include="Gui\ReadyGameScreen\IReadyGameView.cs" />
+        <Compile Include="Gui\ReadyGameScreen\ReadyGamePresenter.cs" />
+        <Compile Include="Gui\ReadyGameScreen\ReadyGameView.cs" />
         <Compile Include="Helpers\AssertionUtils.cs" />
-        <Compile Include="InputHandle\AsyncInputListener.cs" />
-        <Compile Include="Program.cs"/>
-        <Compile Include="Properties\AssemblyInfo.cs"/>
+        <Compile Include="Helpers\Strategy.cs" />
+        <Compile Include="InputHandle\ConsoleAsyncInputListener.cs" />
+        <Compile Include="InputHandle\IConsoleAsyncInputListener.cs" />
+        <Compile Include="Program.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
       <Content Include="Descriptions\AnalysisClasses.md" />

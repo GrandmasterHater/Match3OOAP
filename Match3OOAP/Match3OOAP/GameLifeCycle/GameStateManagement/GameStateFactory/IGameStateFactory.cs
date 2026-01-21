@@ -3,11 +3,11 @@ namespace Match3OOAP.GameLifeCycle.GameStateManagement.GameStateFactory
 {
     public interface IGameStateFactory
     {
-        GameState GetReadyState();
+        GameState GetReadyState(GameController gameController);
         
-        GameState GetRunState();
+        GameState GetRunState(GameController gameController);
         
-        GameState GetFinishedState();
+        GameState GetFinishedState(GameController gameController);
         
         GameState GetClosedState();
     }
